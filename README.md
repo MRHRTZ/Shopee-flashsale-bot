@@ -25,7 +25,7 @@
 ## Start
 - python main.py
 ### or
-- python main.py
+- py main.py
 
 ## Creating session
 
