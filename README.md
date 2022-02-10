@@ -1,23 +1,63 @@
-# Shopee-flashsale-bot
+<p align="center">
+<img src="./media/screenshot/preview.png"/>
+</p>
+<p align="center">
+<!-- <h1>ANCHT BOT</h1> -->
+</p>
+<p align="center">
+<a href="https://github.com/MRHRTZ"><img title="Author" src="https://img.shields.io/badge/Author-MRHRTZ-red.svg?style=for-the-badge&logo=github"></a>
+</p>
+<p align="center">
+<a href="https://github.com/MRHRTZ/Shopee-flashsale-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/MRHRTZ/Shopee-flashsale-bot?color=red&style=flat-square"></a>
+<a href="https://github.com/MRHRTZ/Shopee-flashsale-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/MRHRTZ/Shopee-flashsale-bot?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/MRHRTZ/Shopee-flashsale-bot"><img title="Followers" src="https://img.shields.io/github/followers/MRHRTZ?color=blue&style=flat-square"></a>
+<a href="https://github.com/MRHRTZ/Shopee-flashsale-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/MRHRTZ/Shopee-flashsale-bot?color=red&style=flat-square"></a>
+</p>
 
-## Requirements
+## Requirements 
+- Python 3.xx
+- Google Chrome
 
-- <a href="https://www.google.com/intl/id_id/chrome/">Google Chrome Browser</a>
-- <a href="https://nodejs.org/en/download/">Node JS</a>
-
-## How To Install
-
+## Installation
 - git clone https://github.com/MRHRTZ/Shopee-flashsale-bot
-- npm config set puppeteer_skip_chromium_download true -g
 - cd Shopee-flashsale-bot
-- npm i
-- node cli.js
+
+## Start
+- python main.py
+### or
+- python main.py
+
+## Creating session
+
+- Manual login to shopee
+- Install copy cookies chrome extension <a href="https://chrome.google.com/webstore/detail/copy-cookies/jcbpglbplpblnagieibnemmkiamekcdg">here</a>
+<center>
+<img src="./media/screenshot/copycookies.png">
+</center>
+
+- Click extensions icon on top right at chrome
+- Click "copy cookies", that will copy all cookie on your clipboard (Stay on the shopee page that has logged in)
+
+<center>
+<img src="./media/screenshot/copiedcookies.jpg">
+</center>
+
+- create a file on sessions folder and end of folename with ext .json (ex: mysession.json)
+- paste cookie on clipboard to that file
+
+<center>
+<img src="./media/screenshot/session.png">
+</center>
+
+- then you can select one of active session
+
+<center>
+<img src="./media/screenshot/selectsession.png">
+</center>
 
 ## Note
+- Android platform isn't supported for now
 
-- Don't log in for too long if you don't want 30000ms navigation excedeed and errors (en)
-- Jangan login terlalu lama jika Anda tidak ingin kecepatan navigasi 30000ms dan error (id)
-
-## Contact Me On WhatsApp
-
-- <a href="https://wa.me/6285559038021">MRHRTZ</a>
+## Contact Me
+- <a href="https://wa.me/6285559038021?text=Hi">WhatsApp</a>
+- <a href="https://www.instagram.com/hanif_az.sq.61">Instagram</a>
