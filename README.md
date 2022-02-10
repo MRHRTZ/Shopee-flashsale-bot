@@ -30,7 +30,7 @@
 ## Creating session
 
 - Manual login to shopee
-- Install copy cookies chrome extension <a href="https://chrome.google.com/webstore/detail/copy-cookies/jcbpglbplpblnagieibnemmkiamekcdg">here</a>
+- Install copy cookies chrome extension <a href="https://chrome.google.com/webstore/detail/copy-cookies/jcbpglbplpblnagieibnemmkiamekcdg" target="_blank">here</a>
 <center>
 <img src="./media/screenshot/copycookies.png">
 </center>
@@ -59,5 +59,5 @@
 - Android platform isn't supported for now
 
 ## Contact Me
-- <a href="https://wa.me/6285559038021?text=Hi">WhatsApp</a>
-- <a href="https://www.instagram.com/hanif_az.sq.61">Instagram</a>
+- <a href="https://wa.me/6285559038021?text=Hi" target="_blank">WhatsApp</a>
+- <a href="https://www.instagram.com/hanif_az.sq.61" target="_blank">Instagram</a>
