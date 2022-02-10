@@ -1,7 +1,7 @@
 {
-    "session": "hzsesi.json",
-    "url": "https://shopee.co.id/Tripod-Phone-Holder-Flexible-Octopus-For-Gopro-Camera-DSLR-Mount-i.552219.720164900",
-    "chromedriver": "./webdriver/chromedriver.exe",
+    "session": "",
+    "url": "",
+    "chromedriver": "",
     "options": [],
     "autoCheckout": true,
     "autoOrder": false,
