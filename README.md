@@ -42,7 +42,7 @@
 <img src="./media/screenshot/copiedcookies.jpg">
 </center>
 
-- create a file on sessions folder and end of folename with ext .json (ex: mysession.json)
+- create a file on sessions folder and end of filename with ext .json (ex: mysession.json)
 - paste cookie on clipboard to that file
 
 <center>
