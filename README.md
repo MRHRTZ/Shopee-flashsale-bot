@@ -1,3 +1,5 @@
+# Shopee-flashsale-bot
+
 <p align="center">
 <img src="./media/screenshot/preview.png"/>
 </p>
