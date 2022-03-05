@@ -1,16 +1,3 @@
-# import inquirer
-# questions = [
-#     inquirer.List('size',
-#                   message="What size do you need?",
-#                   choices=['Jumbo', 'Large', 'Standard',
-#                            'Medium', 'Small', 'Micro'],
-#                   ),
-#     inquirer.Text('text', 'What do you want?')
-
-# ]
-# answers = inquirer.prompt(questions)
-# print(answers)
-
 import time
 from lib.moduleChecker import checkModules, readFileJson, clearConsole
 

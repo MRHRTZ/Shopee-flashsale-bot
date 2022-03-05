@@ -1,7 +1,4 @@
-from cgitb import html
-import json, time, inquirer
-import traceback
-from cv2 import log
+import json, traceback
 
 from selenium import webdriver
 from colorama import Fore, Style
