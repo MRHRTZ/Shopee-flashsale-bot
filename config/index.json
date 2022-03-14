@@ -1,7 +1,7 @@
 {
     "session": "",
     "url": "",
-    "chromedriver": "",
+    "chromedriver": "./webdriver/chromedriver.exe",
     "options": [],
     "autoCheckout": true,
     "autoOrder": false,
@@ -12,6 +12,7 @@
         "progress",
         "colorama",
         "requests",
-        "wget"
+        "wget",
+        "pyreadline"
     ]
 }

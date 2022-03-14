@@ -59,6 +59,7 @@
 
 ## Note
 - Android platform isn't supported for now
+- If you can't switch menu on windows 10 try to use numpad arrow (with numlock off)
 
 ## Contact Me
 - <a href="https://wa.me/6285559038021?text=Hi" target="_blank">WhatsApp</a>

@@ -5,3 +5,4 @@ progress
 colorama
 requests
 wget
+pyreadline
