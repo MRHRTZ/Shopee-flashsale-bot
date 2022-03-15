@@ -10,7 +10,6 @@ if __name__ == '__main__':
         time.sleep(0.2)
         checkModules(i)
     clearConsole()
-    from pyreadline import Readline
     from lib.definitions import initProgram, checkChromeDriver, menu
     checkChromeDriver()
     initProgram()

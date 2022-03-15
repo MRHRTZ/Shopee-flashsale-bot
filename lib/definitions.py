@@ -172,17 +172,18 @@ def select_session():
     session = readDir('./sessions')
     settings = readFileJson('./config/index.json')
 
-    if len(session) == 0:
+    session_selector = []
+    for i in session:
+        if '.json' in i:
+            session_selector.append(i)
+
+
+    if len(session_selector) == 0:
         clearConsole()
-        print(Fore.LIGHTRED_EX + '[ There is no account session, open createacc.md to see steps for add session ]\n\n')
+        print(Fore.LIGHTRED_EX + '[ There is no account session, see readme to know steps for add session ]\n\n')
         input(Fore.GREEN + '[Back]' + Style.RESET_ALL)
         menu()
     else:
-        session_selector = []
-        for i in session:
-            if '.json' in i:
-                session_selector.append(i)
-        
         list_session = [
             inquirer.List('session', message='Select your account session', choices=session_selector)
         ]
