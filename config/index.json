@@ -12,7 +12,6 @@
         "progress",
         "colorama",
         "requests",
-        "wget",
-        "pyreadline"
+        "wget"
     ]
 }
