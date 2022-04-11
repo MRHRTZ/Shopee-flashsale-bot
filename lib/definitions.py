@@ -70,7 +70,7 @@ def checkChromeDriver():
         time.sleep(1)
     else:
         print(f'{Style.RESET_ALL}Chromedriver is not detected, {Fore.YELLOW}Installing.. ⚠️\n')
-        versions = ['99', '98', '97']
+        versions = ['101', '100', '99', '98', '97']
         select_version = [inquirer.List('version', message='Select chromedriver version based on your chrome app installed.', choices=versions)]
         answers = inquirer.prompt(select_version)
 
@@ -180,7 +180,7 @@ def select_session():
 
     if len(session_selector) == 0:
         clearConsole()
-        print(Fore.LIGHTRED_EX + '[ There is no account session, see readme to know steps for add session ]\n\n')
+        print(Fore.LIGHTRED_EX + '[ There is no account session, see README.md for steps to add session ]\n\n')
         input(Fore.GREEN + '[Back]' + Style.RESET_ALL)
         menu()
     else:
@@ -201,7 +201,7 @@ def start_countdown():
 
     if not settings['session']:
         clearConsole()
-        print(Fore.LIGHTRED_EX + '[ There is no account session, open createacc.md to see steps for add session ]\n\n')
+        print(Fore.LIGHTRED_EX + '[ There is no account session, see README.md for steps to add session ]\n\n')
         input(Fore.GREEN + '[ Back ]' + Style.RESET_ALL)
         menu()
     elif not settings['url']:
