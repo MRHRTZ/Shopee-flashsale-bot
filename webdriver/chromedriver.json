@@ -1,4 +1,16 @@
 {
+    "101": {
+        "Windows": "https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_win32.zip",
+        "Linux": "https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_mac64_m1.zip"
+    },
+    "100": {
+        "Windows": "https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_win32.zip",
+        "Linux": "https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_mac64_m1.zip"
+    },
     "99": {
         "Windows": "https://chromedriver.storage.googleapis.com/99.0.4844.17/chromedriver_win32.zip",
         "Linux": "https://chromedriver.storage.googleapis.com/99.0.4844.17/chromedriver_linux64.zip",
