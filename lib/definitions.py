@@ -1,7 +1,7 @@
 import time, inquirer, json, os, platform, wget
 
 from colorama import Fore, Style
-
+from zipfile import ZipFile
 from lib.driverExecutor import executeScript
 
 def initProgram():
