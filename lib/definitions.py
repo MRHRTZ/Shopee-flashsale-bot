@@ -1,5 +1,13 @@
-import time, inquirer, json, os, platform, wget
+import collections
+import xml.etree.ElementTree as xml
+import time
+import inquirer
+import json
+import os
+import platform
+import wget
 
+from requests import get, post
 from colorama import Fore, Style
 from zipfile import ZipFile
 from lib.driverExecutor import executeScript
@@ -7,7 +15,8 @@ from lib.driverExecutor import executeScript
 def initProgram():
     clearConsole()
     settings = readFileJson('./config/index.json')
-    title = headerOutput(autoCheckout=settings['autoCheckout'], autoOrder=settings['autoOrder'], chromedriver=settings['chromedriver'], session=settings['session'], urlTarget=settings['url'], options=settings['options'], justTitle=False)
+    title = headerOutput(autoCheckout=settings['autoCheckout'], autoOrder=settings['autoOrder'], chromedriver=settings['chromedriver'],
+                         session=settings['session'], urlTarget=settings['url'], options=settings['options'], justTitle=False)
     print(title)
 
 def clearConsole():
@@ -27,12 +36,13 @@ def readFileJson(file):
     return data
 
 def writeFileJson(obj, file):
-    jsonObj = json.dumps(obj, indent = 4)
-    
+    jsonObj = json.dumps(obj, indent=4)
+
     with open(file, "w") as outfile:
         outfile.write(jsonObj)
 
-def headerOutput(autoCheckout, autoOrder, chromedriver, session, urlTarget, options = [], justTitle = True):
+
+def headerOutput(autoCheckout, autoOrder, chromedriver, session, urlTarget, options=[], justTitle=True):
     string = f'''
 {Fore.LIGHTBLACK_EX}==========================================================
 #              {Fore.RED}Shopee Fs Bot {Fore.LIGHTBLACK_EX}- {Fore.WHITE}By MRHRTZ                 {Fore.LIGHTBLACK_EX}#
@@ -52,15 +62,63 @@ def headerOutput(autoCheckout, autoOrder, chromedriver, session, urlTarget, opti
             for i in range(len(options)):
                 string += f'''
 {Fore.GREEN + options[i][0]} :{Style.RESET_ALL} {(Fore.BLUE + options[i][1] + Style.RESET_ALL) if options[i][1] not in [None, ''] else (Fore.YELLOW + '-' + Style.RESET_ALL)}'''
-    
+
     return string
+
+
+def getWebdriverList(webdriver = 'chrome'):
+    if webdriver == 'chrome':
+        chromeDriverUrl = 'https://chromedriver.storage.googleapis.com/'
+        fetchChromeDriver = get(chromeDriverUrl).text
+        webdriverListXml = xml.fromstring(fetchChromeDriver)
+        webdriverList = {}
+        for i in range(4, len(webdriverListXml)):
+            for content in webdriverListXml[i]:
+                if '/chrome' in content.text: 
+                    driverKey = content.text.split('/')[1]
+                    driverVersion = content.text.split('/')[0]
+                    driverUrl = chromeDriverUrl + content.text 
+                    if 'win' in driverKey:
+                        if driverVersion in webdriverList:
+                            webdriverList[driverVersion]['Windows'] = driverUrl
+                        else:
+                            webdriverList[driverVersion] = {}
+                            webdriverList[driverVersion]['Windows'] = driverUrl
+                    elif 'linux' in driverKey:
+                        if driverVersion in webdriverList:
+                            webdriverList[driverVersion]['Linux'] = driverUrl
+                        else:
+                            webdriverList[driverVersion] = {}
+                            webdriverList[driverVersion]['Linux'] = driverUrl
+                    elif 'mac64.' in driverKey:
+                        if driverVersion in webdriverList:
+                            webdriverList[driverVersion]['Darwin'] = driverUrl
+                        else:
+                            webdriverList[driverVersion] = {}
+                            webdriverList[driverVersion]['Darwin'] = driverUrl
+                    elif 'mac64_m1' in driverKey:
+                        if driverVersion in webdriverList:
+                            webdriverList[driverVersion]['Darwin_m1'] = driverUrl
+                        else:
+                            webdriverList[driverVersion] = {}
+                            webdriverList[driverVersion]['Darwin_m1'] = driverUrl
+        webdriverList = collections.OrderedDict(sorted(webdriverList.items()))
+        writeFileJson(webdriverList, './webdriver/chromedriver.json')
+        return webdriverList
+    if webdriver == 'firefox':
+        return ['firefox']
+    if webdriver =='safari':
+        return ['safari']
+    if webdriver == 'ie':
+        return ['ie']
+
 
 def checkChromeDriver():
     settings = readFileJson('./config/index.json')
     chromeDriver = settings['chromedriver']
     chromeDir = readDir('./webdriver')
     _platform = platform.system()
-    
+
     print('[🏁] Checking ChromeDriver...\n')
     time.sleep(1)
     print(f'{Fore.BLUE}Your platform is {_platform}')
@@ -69,12 +127,15 @@ def checkChromeDriver():
         print(f"{Fore.WHITE}{chromeDriver!r} installed ✔️")
         time.sleep(1)
     else:
-        print(f'{Style.RESET_ALL}Chromedriver is not detected, {Fore.YELLOW}Installing.. ⚠️\n')
-        versions = ['101', '100', '99', '98', '97']
-        select_version = [inquirer.List('version', message='Select chromedriver version based on your chrome app installed.', choices=versions)]
+        print(
+            f'{Style.RESET_ALL}Chromedriver is not detected, {Fore.YELLOW}Installing.. ⚠️\n')
+        versions = getWebdriverList()
+        select_version = [inquirer.List(
+            'version', message='Select chromedriver version based on your chrome app installed.', choices=[version for version in versions])]
         answers = inquirer.prompt(select_version)
 
-        print('\n{0}Downloading ChromeDriver {1} v{2}{3}\n'.format(Fore.BLUE, _platform, answers['version'], Fore.LIGHTRED_EX))
+        print('\n{0}Downloading ChromeDriver {1} v{2}{3}\n'.format(
+            Fore.BLUE, _platform, answers['version'], Fore.LIGHTRED_EX))
 
         driverURL = readFileJson('./webdriver/chromedriver.json')
         driverURL = driverURL[answers['version']][_platform]
@@ -85,7 +146,7 @@ def checkChromeDriver():
 
         with ZipFile(zipPath, 'r') as zip_ref:
             zip_ref.extractall(path='webdriver/',)
-            
+
         os.remove(zipPath)
 
         print(Fore.WHITE + '\nInstalled ✔️')
@@ -110,7 +171,8 @@ def menu():
 
     ]
     list_menu = [
-        inquirer.List('main', message='Welcome to FS Bot, Select one..', choices=selector)
+        inquirer.List(
+            'main', message='Welcome to FS Bot, Select one..', choices=selector)
     ]
 
     _menu = inquirer.prompt(list_menu)
@@ -148,9 +210,10 @@ def menu_options():
         menu()
 
 def reset_settings():
-    answer = inquirer.prompt([inquirer.Confirm('check', message='Are you sure to reset settings?')])
+    answer = inquirer.prompt(
+        [inquirer.Confirm('check', message='Are you sure to reset settings?')])
     settings = readFileJson('./config/index.json')
-        
+
     if answer['check']:
         settings['session'] = ''
         settings['url'] = ''
@@ -164,7 +227,7 @@ def set_url():
 
     URL = [inquirer.Text('url', message='Insert Shopee Flashsale URL')]
     answer = inquirer.prompt(URL)['url']
-    settings['url'] = answer 
+    settings['url'] = answer
     writeFileJson(settings, './config/index.json')
     menu()
 
@@ -177,15 +240,16 @@ def select_session():
         if '.json' in i:
             session_selector.append(i)
 
-
     if len(session_selector) == 0:
         clearConsole()
-        print(Fore.LIGHTRED_EX + '[ There is no account session, see README.md for steps to add session ]\n\n')
+        print(Fore.LIGHTRED_EX +
+              '[ There is no account session, see README.md for steps to add session ]\n\n')
         input(Fore.GREEN + '[Back]' + Style.RESET_ALL)
         menu()
     else:
         list_session = [
-            inquirer.List('session', message='Select your account session', choices=session_selector)
+            inquirer.List(
+                'session', message='Select your account session', choices=session_selector)
         ]
 
         _session = inquirer.prompt(list_session)
@@ -201,12 +265,14 @@ def start_countdown():
 
     if not settings['session']:
         clearConsole()
-        print(Fore.LIGHTRED_EX + '[ There is no account session, see README.md for steps to add session ]\n\n')
+        print(Fore.LIGHTRED_EX +
+              '[ There is no account session, see README.md for steps to add session ]\n\n')
         input(Fore.GREEN + '[ Back ]' + Style.RESET_ALL)
         menu()
     elif not settings['url']:
         clearConsole()
-        print(Fore.LIGHTRED_EX + '[ Please Insert Shopee Flashsale Item URL ]\n\n')
+        print(Fore.LIGHTRED_EX +
+              '[ Please Insert Shopee Flashsale Item URL ]\n\n')
         input(Fore.GREEN + '[ Back ]' + Style.RESET_ALL)
         menu()
     else:
