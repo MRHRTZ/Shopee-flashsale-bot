@@ -9,7 +9,7 @@
     "modules": [
         "progress",
         "inquirer",
-        "selenium",
+        "selenium-wire",
         "progress",
         "colorama",
         "requests",
