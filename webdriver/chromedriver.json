@@ -154,6 +154,11 @@
         "Darwin": "https://chromedriver.storage.googleapis.com/112.0.5615.28/chromedriver_mac64.zip",
         "Windows": "https://chromedriver.storage.googleapis.com/112.0.5615.28/chromedriver_win32.zip"
     },
+    "112.0.5615.49": {
+        "Linux": "https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_win32.zip"
+    },
     "2.0": {
         "Linux": "https://chromedriver.storage.googleapis.com/2.0/chromedriver_linux64.zip",
         "Windows": "https://chromedriver.storage.googleapis.com/2.0/chromedriver_win32.zip"
