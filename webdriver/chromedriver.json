@@ -1,1 +1,747 @@
-{}
+{
+    "100.0.4896.20": {
+        "Linux": "https://chromedriver.storage.googleapis.com/100.0.4896.20/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/100.0.4896.20/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/100.0.4896.20/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/100.0.4896.20/chromedriver_win32.zip"
+    },
+    "100.0.4896.60": {
+        "Linux": "https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_win32.zip"
+    },
+    "101.0.4951.15": {
+        "Linux": "https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_win32.zip"
+    },
+    "101.0.4951.41": {
+        "Linux": "https://chromedriver.storage.googleapis.com/101.0.4951.41/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/101.0.4951.41/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/101.0.4951.41/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/101.0.4951.41/chromedriver_win32.zip"
+    },
+    "102.0.5005.27": {
+        "Linux": "https://chromedriver.storage.googleapis.com/102.0.5005.27/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/102.0.5005.27/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/102.0.5005.27/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/102.0.5005.27/chromedriver_win32.zip"
+    },
+    "102.0.5005.61": {
+        "Linux": "https://chromedriver.storage.googleapis.com/102.0.5005.61/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/102.0.5005.61/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/102.0.5005.61/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/102.0.5005.61/chromedriver_win32.zip"
+    },
+    "103.0.5060.134": {
+        "Linux": "https://chromedriver.storage.googleapis.com/103.0.5060.134/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/103.0.5060.134/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/103.0.5060.134/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/103.0.5060.134/chromedriver_win32.zip"
+    },
+    "103.0.5060.24": {
+        "Linux": "https://chromedriver.storage.googleapis.com/103.0.5060.24/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/103.0.5060.24/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/103.0.5060.24/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/103.0.5060.24/chromedriver_win32.zip"
+    },
+    "103.0.5060.53": {
+        "Linux": "https://chromedriver.storage.googleapis.com/103.0.5060.53/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/103.0.5060.53/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/103.0.5060.53/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/103.0.5060.53/chromedriver_win32.zip"
+    },
+    "104.0.5112.20": {
+        "Linux": "https://chromedriver.storage.googleapis.com/104.0.5112.20/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/104.0.5112.20/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/104.0.5112.20/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/104.0.5112.20/chromedriver_win32.zip"
+    },
+    "104.0.5112.29": {
+        "Linux": "https://chromedriver.storage.googleapis.com/104.0.5112.29/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/104.0.5112.29/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/104.0.5112.29/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/104.0.5112.29/chromedriver_win32.zip"
+    },
+    "104.0.5112.79": {
+        "Linux": "https://chromedriver.storage.googleapis.com/104.0.5112.79/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/104.0.5112.79/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/104.0.5112.79/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/104.0.5112.79/chromedriver_win32.zip"
+    },
+    "105.0.5195.19": {
+        "Linux": "https://chromedriver.storage.googleapis.com/105.0.5195.19/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/105.0.5195.19/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/105.0.5195.19/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/105.0.5195.19/chromedriver_win32.zip"
+    },
+    "105.0.5195.52": {
+        "Linux": "https://chromedriver.storage.googleapis.com/105.0.5195.52/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/105.0.5195.52/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/105.0.5195.52/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/105.0.5195.52/chromedriver_win32.zip"
+    },
+    "106.0.5249.21": {
+        "Linux": "https://chromedriver.storage.googleapis.com/106.0.5249.21/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/106.0.5249.21/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/106.0.5249.21/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/106.0.5249.21/chromedriver_win32.zip"
+    },
+    "106.0.5249.61": {
+        "Linux": "https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_win32.zip"
+    },
+    "107.0.5304.18": {
+        "Linux": "https://chromedriver.storage.googleapis.com/107.0.5304.18/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/107.0.5304.18/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/107.0.5304.18/chromedriver_win32.zip"
+    },
+    "107.0.5304.62": {
+        "Linux": "https://chromedriver.storage.googleapis.com/107.0.5304.62/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/107.0.5304.62/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/107.0.5304.62/chromedriver_win32.zip"
+    },
+    "108.0.5359.22": {
+        "Linux": "https://chromedriver.storage.googleapis.com/108.0.5359.22/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/108.0.5359.22/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/108.0.5359.22/chromedriver_win32.zip"
+    },
+    "108.0.5359.71": {
+        "Linux": "https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_win32.zip"
+    },
+    "109.0.5414.25": {
+        "Linux": "https://chromedriver.storage.googleapis.com/109.0.5414.25/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/109.0.5414.25/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/109.0.5414.25/chromedriver_win32.zip"
+    },
+    "109.0.5414.74": {
+        "Linux": "https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip"
+    },
+    "110.0.5481.30": {
+        "Linux": "https://chromedriver.storage.googleapis.com/110.0.5481.30/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/110.0.5481.30/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/110.0.5481.30/chromedriver_win32.zip"
+    },
+    "110.0.5481.77": {
+        "Linux": "https://chromedriver.storage.googleapis.com/110.0.5481.77/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/110.0.5481.77/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/110.0.5481.77/chromedriver_win32.zip"
+    },
+    "111.0.5563.19": {
+        "Linux": "https://chromedriver.storage.googleapis.com/111.0.5563.19/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/111.0.5563.19/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/111.0.5563.19/chromedriver_win32.zip"
+    },
+    "111.0.5563.41": {
+        "Linux": "https://chromedriver.storage.googleapis.com/111.0.5563.41/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/111.0.5563.41/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/111.0.5563.41/chromedriver_win32.zip"
+    },
+    "111.0.5563.64": {
+        "Linux": "https://chromedriver.storage.googleapis.com/111.0.5563.64/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/111.0.5563.64/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/111.0.5563.64/chromedriver_win32.zip"
+    },
+    "112.0.5615.28": {
+        "Linux": "https://chromedriver.storage.googleapis.com/112.0.5615.28/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/112.0.5615.28/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/112.0.5615.28/chromedriver_win32.zip"
+    },
+    "2.0": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.0/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.0/chromedriver_win32.zip"
+    },
+    "2.1": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.1/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.1/chromedriver_win32.zip"
+    },
+    "2.10": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.10/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.10/chromedriver_win32.zip"
+    },
+    "2.11": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.11/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.11/chromedriver_win32.zip"
+    },
+    "2.12": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.12/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.12/chromedriver_win32.zip"
+    },
+    "2.13": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.13/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.13/chromedriver_win32.zip"
+    },
+    "2.14": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.14/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.14/chromedriver_win32.zip"
+    },
+    "2.15": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.15/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.15/chromedriver_win32.zip"
+    },
+    "2.16": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.16/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.16/chromedriver_win32.zip"
+    },
+    "2.17": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.17/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.17/chromedriver_win32.zip"
+    },
+    "2.18": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.18/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.18/chromedriver_win32.zip"
+    },
+    "2.19": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.19/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.19/chromedriver_win32.zip"
+    },
+    "2.2": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.2/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.2/chromedriver_win32.zip"
+    },
+    "2.20": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.20/chromedriver_win32.zip"
+    },
+    "2.21": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.21/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.21/chromedriver_win32.zip"
+    },
+    "2.22": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.22/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.22/chromedriver_win32.zip"
+    },
+    "2.23": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.23/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.23/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.23/chromedriver_win32.zip"
+    },
+    "2.24": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.24/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.24/chromedriver_win32.zip"
+    },
+    "2.25": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.25/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.25/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.25/chromedriver_win32.zip"
+    },
+    "2.26": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.26/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.26/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.26/chromedriver_win32.zip"
+    },
+    "2.27": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.27/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.27/chromedriver_win32.zip"
+    },
+    "2.28": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.28/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.28/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.28/chromedriver_win32.zip"
+    },
+    "2.29": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.29/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.29/chromedriver_win32.zip"
+    },
+    "2.3": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.3/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.3/chromedriver_win32.zip"
+    },
+    "2.30": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.30/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.30/chromedriver_win32.zip"
+    },
+    "2.31": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.31/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.31/chromedriver_win32.zip"
+    },
+    "2.32": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.32/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.32/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.32/chromedriver_win32.zip"
+    },
+    "2.33": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.33/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.33/chromedriver_win32.zip"
+    },
+    "2.34": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.34/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.34/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.34/chromedriver_win32.zip"
+    },
+    "2.35": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.35/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.35/chromedriver_win32.zip"
+    },
+    "2.36": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.36/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.36/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.36/chromedriver_win32.zip"
+    },
+    "2.37": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.37/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.37/chromedriver_win32.zip"
+    },
+    "2.38": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.38/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.38/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.38/chromedriver_win32.zip"
+    },
+    "2.39": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.39/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.39/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.39/chromedriver_win32.zip"
+    },
+    "2.4": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.4/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.4/chromedriver_win32.zip"
+    },
+    "2.40": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.40/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.40/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.40/chromedriver_win32.zip"
+    },
+    "2.41": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.41/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.41/chromedriver_win32.zip"
+    },
+    "2.42": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.42/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.42/chromedriver_win32.zip"
+    },
+    "2.43": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.43/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.43/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.43/chromedriver_win32.zip"
+    },
+    "2.44": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.44/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.44/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.44/chromedriver_win32.zip"
+    },
+    "2.45": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.45/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.45/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.45/chromedriver_win32.zip"
+    },
+    "2.46": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/2.46/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.46/chromedriver_win32.zip"
+    },
+    "2.5": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.5/chromedriver_linux64.zip"
+    },
+    "2.6": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.6/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.6/chromedriver_win32_debug_symbols.zip"
+    },
+    "2.7": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.7/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.7/chromedriver_win32.zip"
+    },
+    "2.8": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.8/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.8/chromedriver_win32.zip"
+    },
+    "2.9": {
+        "Linux": "https://chromedriver.storage.googleapis.com/2.9/chromedriver_linux64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip"
+    },
+    "70.0.3538.16": {
+        "Linux": "https://chromedriver.storage.googleapis.com/70.0.3538.16/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/70.0.3538.16/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/70.0.3538.16/chromedriver_win32.zip"
+    },
+    "70.0.3538.67": {
+        "Linux": "https://chromedriver.storage.googleapis.com/70.0.3538.67/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/70.0.3538.67/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/70.0.3538.67/chromedriver_win32.zip"
+    },
+    "70.0.3538.97": {
+        "Linux": "https://chromedriver.storage.googleapis.com/70.0.3538.97/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/70.0.3538.97/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/70.0.3538.97/chromedriver_win32.zip"
+    },
+    "71.0.3578.137": {
+        "Linux": "https://chromedriver.storage.googleapis.com/71.0.3578.137/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/71.0.3578.137/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/71.0.3578.137/chromedriver_win32.zip"
+    },
+    "71.0.3578.30": {
+        "Linux": "https://chromedriver.storage.googleapis.com/71.0.3578.30/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/71.0.3578.30/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/71.0.3578.30/chromedriver_win32.zip"
+    },
+    "71.0.3578.33": {
+        "Linux": "https://chromedriver.storage.googleapis.com/71.0.3578.33/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/71.0.3578.33/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/71.0.3578.33/chromedriver_win32.zip"
+    },
+    "71.0.3578.80": {
+        "Linux": "https://chromedriver.storage.googleapis.com/71.0.3578.80/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/71.0.3578.80/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/71.0.3578.80/chromedriver_win32.zip"
+    },
+    "72.0.3626.69": {
+        "Linux": "https://chromedriver.storage.googleapis.com/72.0.3626.69/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/72.0.3626.69/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/72.0.3626.69/chromedriver_win32.zip"
+    },
+    "72.0.3626.7": {
+        "Linux": "https://chromedriver.storage.googleapis.com/72.0.3626.7/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/72.0.3626.7/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/72.0.3626.7/chromedriver_win32.zip"
+    },
+    "73.0.3683.20": {
+        "Linux": "https://chromedriver.storage.googleapis.com/73.0.3683.20/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/73.0.3683.20/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/73.0.3683.20/chromedriver_win32.zip"
+    },
+    "73.0.3683.68": {
+        "Linux": "https://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_win32.zip"
+    },
+    "74.0.3729.6": {
+        "Linux": "https://chromedriver.storage.googleapis.com/74.0.3729.6/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/74.0.3729.6/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/74.0.3729.6/chromedriver_win32.zip"
+    },
+    "75.0.3770.140": {
+        "Linux": "https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_win32.zip"
+    },
+    "75.0.3770.8": {
+        "Linux": "https://chromedriver.storage.googleapis.com/75.0.3770.8/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/75.0.3770.8/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/75.0.3770.8/chromedriver_win32.zip"
+    },
+    "75.0.3770.90": {
+        "Linux": "https://chromedriver.storage.googleapis.com/75.0.3770.90/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/75.0.3770.90/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/75.0.3770.90/chromedriver_win32.zip"
+    },
+    "76.0.3809.12": {
+        "Linux": "https://chromedriver.storage.googleapis.com/76.0.3809.12/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/76.0.3809.12/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/76.0.3809.12/chromedriver_win32.zip"
+    },
+    "76.0.3809.126": {
+        "Linux": "https://chromedriver.storage.googleapis.com/76.0.3809.126/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/76.0.3809.126/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/76.0.3809.126/chromedriver_win32.zip"
+    },
+    "76.0.3809.25": {
+        "Linux": "https://chromedriver.storage.googleapis.com/76.0.3809.25/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/76.0.3809.25/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/76.0.3809.25/chromedriver_win32.zip"
+    },
+    "76.0.3809.68": {
+        "Linux": "https://chromedriver.storage.googleapis.com/76.0.3809.68/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/76.0.3809.68/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/76.0.3809.68/chromedriver_win32.zip"
+    },
+    "77.0.3865.10": {
+        "Linux": "https://chromedriver.storage.googleapis.com/77.0.3865.10/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/77.0.3865.10/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/77.0.3865.10/chromedriver_win32.zip"
+    },
+    "77.0.3865.40": {
+        "Linux": "https://chromedriver.storage.googleapis.com/77.0.3865.40/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/77.0.3865.40/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/77.0.3865.40/chromedriver_win32.zip"
+    },
+    "78.0.3904.105": {
+        "Linux": "https://chromedriver.storage.googleapis.com/78.0.3904.105/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/78.0.3904.105/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/78.0.3904.105/chromedriver_win32.zip"
+    },
+    "78.0.3904.11": {
+        "Linux": "https://chromedriver.storage.googleapis.com/78.0.3904.11/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/78.0.3904.11/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/78.0.3904.11/chromedriver_win32.zip"
+    },
+    "78.0.3904.70": {
+        "Linux": "https://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_win32.zip"
+    },
+    "79.0.3945.16": {
+        "Linux": "https://chromedriver.storage.googleapis.com/79.0.3945.16/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/79.0.3945.16/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/79.0.3945.16/chromedriver_win32.zip"
+    },
+    "79.0.3945.36": {
+        "Linux": "https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_win32.zip"
+    },
+    "80.0.3987.106": {
+        "Linux": "https://chromedriver.storage.googleapis.com/80.0.3987.106/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/80.0.3987.106/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/80.0.3987.106/chromedriver_win32.zip"
+    },
+    "80.0.3987.16": {
+        "Linux": "https://chromedriver.storage.googleapis.com/80.0.3987.16/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/80.0.3987.16/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/80.0.3987.16/chromedriver_win32.zip"
+    },
+    "81.0.4044.138": {
+        "Linux": "https://chromedriver.storage.googleapis.com/81.0.4044.138/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/81.0.4044.138/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/81.0.4044.138/chromedriver_win32.zip"
+    },
+    "81.0.4044.20": {
+        "Linux": "https://chromedriver.storage.googleapis.com/81.0.4044.20/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/81.0.4044.20/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/81.0.4044.20/chromedriver_win32.zip"
+    },
+    "81.0.4044.69": {
+        "Linux": "https://chromedriver.storage.googleapis.com/81.0.4044.69/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/81.0.4044.69/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/81.0.4044.69/chromedriver_win32.zip"
+    },
+    "83.0.4103.14": {
+        "Linux": "https://chromedriver.storage.googleapis.com/83.0.4103.14/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/83.0.4103.14/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/83.0.4103.14/chromedriver_win32.zip"
+    },
+    "83.0.4103.39": {
+        "Linux": "https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_win32.zip"
+    },
+    "84.0.4147.30": {
+        "Linux": "https://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_win32.zip"
+    },
+    "85.0.4183.38": {
+        "Linux": "https://chromedriver.storage.googleapis.com/85.0.4183.38/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/85.0.4183.38/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/85.0.4183.38/chromedriver_win32.zip"
+    },
+    "85.0.4183.83": {
+        "Linux": "https://chromedriver.storage.googleapis.com/85.0.4183.83/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/85.0.4183.83/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/85.0.4183.83/chromedriver_win32.zip"
+    },
+    "85.0.4183.87": {
+        "Linux": "https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_win32.zip"
+    },
+    "86.0.4240.22": {
+        "Linux": "https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_win32.zip"
+    },
+    "87.0.4280.20": {
+        "Linux": "https://chromedriver.storage.googleapis.com/87.0.4280.20/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/87.0.4280.20/chromedriver_mac64.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/87.0.4280.20/chromedriver_win32.zip"
+    },
+    "87.0.4280.87": {
+        "Linux": "https://chromedriver.storage.googleapis.com/87.0.4280.87/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/87.0.4280.87/chromedriver_mac64.zip"
+    },
+    "87.0.4280.88": {
+        "Linux": "https://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_win32.zip"
+    },
+    "88.0.4324.27": {
+        "Linux": "https://chromedriver.storage.googleapis.com/88.0.4324.27/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/88.0.4324.27/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/88.0.4324.27/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/88.0.4324.27/chromedriver_win32.zip"
+    },
+    "88.0.4324.96": {
+        "Linux": "https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_win32.zip"
+    },
+    "89.0.4389.23": {
+        "Linux": "https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_win32.zip"
+    },
+    "90.0.4430.24": {
+        "Linux": "https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_win32.zip"
+    },
+    "91.0.4472.101": {
+        "Linux": "https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_win32.zip"
+    },
+    "91.0.4472.19": {
+        "Linux": "https://chromedriver.storage.googleapis.com/91.0.4472.19/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/91.0.4472.19/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/91.0.4472.19/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/91.0.4472.19/chromedriver_win32.zip"
+    },
+    "92.0.4515.107": {
+        "Linux": "https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_win32.zip"
+    },
+    "92.0.4515.43": {
+        "Linux": "https://chromedriver.storage.googleapis.com/92.0.4515.43/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/92.0.4515.43/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/92.0.4515.43/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/92.0.4515.43/chromedriver_win32.zip"
+    },
+    "93.0.4577.15": {
+        "Linux": "https://chromedriver.storage.googleapis.com/93.0.4577.15/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/93.0.4577.15/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/93.0.4577.15/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/93.0.4577.15/chromedriver_win32.zip"
+    },
+    "93.0.4577.63": {
+        "Linux": "https://chromedriver.storage.googleapis.com/93.0.4577.63/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/93.0.4577.63/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/93.0.4577.63/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/93.0.4577.63/chromedriver_win32.zip"
+    },
+    "94.0.4606.113": {
+        "Linux": "https://chromedriver.storage.googleapis.com/94.0.4606.113/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/94.0.4606.113/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/94.0.4606.113/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/94.0.4606.113/chromedriver_win32.zip"
+    },
+    "94.0.4606.41": {
+        "Linux": "https://chromedriver.storage.googleapis.com/94.0.4606.41/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/94.0.4606.41/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/94.0.4606.41/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/94.0.4606.41/chromedriver_win32.zip"
+    },
+    "94.0.4606.61": {
+        "Linux": "https://chromedriver.storage.googleapis.com/94.0.4606.61/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/94.0.4606.61/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/94.0.4606.61/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/94.0.4606.61/chromedriver_win32.zip"
+    },
+    "95.0.4638.10": {
+        "Linux": "https://chromedriver.storage.googleapis.com/95.0.4638.10/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/95.0.4638.10/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/95.0.4638.10/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/95.0.4638.10/chromedriver_win32.zip"
+    },
+    "95.0.4638.17": {
+        "Linux": "https://chromedriver.storage.googleapis.com/95.0.4638.17/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/95.0.4638.17/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/95.0.4638.17/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/95.0.4638.17/chromedriver_win32.zip"
+    },
+    "95.0.4638.54": {
+        "Linux": "https://chromedriver.storage.googleapis.com/95.0.4638.54/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/95.0.4638.54/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/95.0.4638.54/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/95.0.4638.54/chromedriver_win32.zip"
+    },
+    "95.0.4638.69": {
+        "Linux": "https://chromedriver.storage.googleapis.com/95.0.4638.69/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/95.0.4638.69/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/95.0.4638.69/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/95.0.4638.69/chromedriver_win32.zip"
+    },
+    "96.0.4664.18": {
+        "Linux": "https://chromedriver.storage.googleapis.com/96.0.4664.18/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/96.0.4664.18/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/96.0.4664.18/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/96.0.4664.18/chromedriver_win32.zip"
+    },
+    "96.0.4664.35": {
+        "Linux": "https://chromedriver.storage.googleapis.com/96.0.4664.35/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/96.0.4664.35/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/96.0.4664.35/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/96.0.4664.35/chromedriver_win32.zip"
+    },
+    "96.0.4664.45": {
+        "Linux": "https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_win32.zip"
+    },
+    "97.0.4692.20": {
+        "Linux": "https://chromedriver.storage.googleapis.com/97.0.4692.20/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/97.0.4692.20/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/97.0.4692.20/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/97.0.4692.20/chromedriver_win32.zip"
+    },
+    "97.0.4692.36": {
+        "Linux": "https://chromedriver.storage.googleapis.com/97.0.4692.36/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/97.0.4692.36/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/97.0.4692.36/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/97.0.4692.36/chromedriver_win32.zip"
+    },
+    "97.0.4692.71": {
+        "Linux": "https://chromedriver.storage.googleapis.com/97.0.4692.71/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/97.0.4692.71/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/97.0.4692.71/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/97.0.4692.71/chromedriver_win32.zip"
+    },
+    "98.0.4758.102": {
+        "Linux": "https://chromedriver.storage.googleapis.com/98.0.4758.102/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/98.0.4758.102/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/98.0.4758.102/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/98.0.4758.102/chromedriver_win32.zip"
+    },
+    "98.0.4758.48": {
+        "Linux": "https://chromedriver.storage.googleapis.com/98.0.4758.48/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/98.0.4758.48/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/98.0.4758.48/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/98.0.4758.48/chromedriver_win32.zip"
+    },
+    "98.0.4758.80": {
+        "Linux": "https://chromedriver.storage.googleapis.com/98.0.4758.80/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/98.0.4758.80/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/98.0.4758.80/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/98.0.4758.80/chromedriver_win32.zip"
+    },
+    "99.0.4844.17": {
+        "Linux": "https://chromedriver.storage.googleapis.com/99.0.4844.17/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/99.0.4844.17/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/99.0.4844.17/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/99.0.4844.17/chromedriver_win32.zip"
+    },
+    "99.0.4844.35": {
+        "Linux": "https://chromedriver.storage.googleapis.com/99.0.4844.35/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/99.0.4844.35/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/99.0.4844.35/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/99.0.4844.35/chromedriver_win32.zip"
+    },
+    "99.0.4844.51": {
+        "Linux": "https://chromedriver.storage.googleapis.com/99.0.4844.51/chromedriver_linux64.zip",
+        "Darwin": "https://chromedriver.storage.googleapis.com/99.0.4844.51/chromedriver_mac64.zip",
+        "Darwin_m1": "https://chromedriver.storage.googleapis.com/99.0.4844.51/chromedriver_mac64_m1.zip",
+        "Windows": "https://chromedriver.storage.googleapis.com/99.0.4844.51/chromedriver_win32.zip"
+    }
+}

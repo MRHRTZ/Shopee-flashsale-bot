@@ -10,7 +10,7 @@ import wget
 from requests import get, post
 from colorama import Fore, Style
 from zipfile import ZipFile
-from lib.driverExecutor import executeScript
+from lib.driverExecutor import executeScript, checkUrl
 
 def initProgram():
     clearConsole()
@@ -224,16 +224,46 @@ def reset_settings():
 
 def set_url():
     settings = readFileJson('./config/index.json')
+    settings['platform'] = platform.system()
 
     URL = [inquirer.Text('url', message='Insert Shopee Flashsale URL')]
     answer = inquirer.prompt(URL)['url']
     settings['url'] = answer
-    writeFileJson(settings, './config/index.json')
-    menu()
+    print(f'\n{Fore.LIGHTYELLOW_EX}Checking url ...\n')
+    item_detail = checkUrl(**settings)
+    if item_detail:
+        variation = item_detail['tier_variations']
+        print(variation)
+        sel_variation_list = []
+        if len(variation) > 0:
+            for variant in variation:
+                variant_name = variant['name']
+                select_variant = []
+                for i in range(len(variant['options'])):
+                    if not variant['summed_stocks'] or variant['summed_stocks'][i] > 0:
+                        select_variant.append(variant['options'][i])
+                list_variant = [
+                inquirer.List(
+                    f'variant-{i}', message=variant_name, choices=select_variant)
+                ]
+
+                _prompt = inquirer.prompt(list_variant)
+                selected_variant = _prompt[f'variant-{i}']
+                sel_variation_list.append(selected_variant)
+        settings['variation'] = sel_variation_list
+        variation_str = f' {Fore.RED}| {Fore.WHITE}'.join(sel_variation_list)
+        print(f'{Fore.GREEN}Saving{Fore.WHITE}: {Fore.BLUE}{item_detail["name"]}\n{Fore.WHITE}{variation_str}')
+        time.sleep(3)
+        writeFileJson(settings, './config/index.json')
+        menu()
+    else:
+        print(f'{Fore.RED}Invalid URL!\n')
+        set_url()
 
 def select_session():
     session = readDir('./sessions')
     settings = readFileJson('./config/index.json')
+    settings['platform'] = platform.system()
 
     session_selector = []
     for i in session:
@@ -262,6 +292,7 @@ def select_session():
 
 def start_countdown():
     settings = readFileJson('./config/index.json')
+    settings['platform'] = platform.system()
 
     if not settings['session']:
         clearConsole()
@@ -276,7 +307,8 @@ def start_countdown():
         input(Fore.GREEN + '[ Back ]' + Style.RESET_ALL)
         menu()
     else:
-        settings['platform'] = platform.system()
+        clearConsole()
+        print(Fore.YELLOW + '[ Initial chrome automation... ]\n\n')
         executeScript(**settings)
 
 

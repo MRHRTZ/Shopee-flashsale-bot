@@ -1,7 +1,8 @@
 {
     "session": "",
     "url": "",
-    "chromedriver": "./webdriver/chromedriver.exe",
+    "variation": [],
+    "chromedriver": "./webdriver/chromedriver",
     "options": [],
     "autoCheckout": true,
     "autoOrder": false,
@@ -13,5 +14,6 @@
         "colorama",
         "requests",
         "wget"
-    ]
+    ],
+    "platform": ""
 }
