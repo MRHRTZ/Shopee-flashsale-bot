@@ -11,7 +11,7 @@ from .utils import is_valid_url
 from requests import get, post
 from colorama import Fore, Style
 from zipfile import ZipFile
-from lib.driverExecutor import executeScript, checkUrl
+from lib.driverExecutor import executeScript
 
 def initProgram():
     clearConsole()
