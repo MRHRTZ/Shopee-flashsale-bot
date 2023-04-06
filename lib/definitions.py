@@ -7,6 +7,7 @@ import os
 import platform
 import wget
 
+from .utils import is_valid_url
 from requests import get, post
 from colorama import Fore, Style
 from zipfile import ZipFile
@@ -230,29 +231,11 @@ def set_url():
     answer = inquirer.prompt(URL)['url']
     settings['url'] = answer
     print(f'\n{Fore.LIGHTYELLOW_EX}Checking url ...\n')
-    item_detail = checkUrl(**settings)
-    if item_detail:
-        variation = item_detail['tier_variations']
-        print(variation)
-        sel_variation_list = []
-        if len(variation) > 0:
-            for variant in variation:
-                variant_name = variant['name']
-                select_variant = []
-                for i in range(len(variant['options'])):
-                    if not variant['summed_stocks'] or variant['summed_stocks'][i] > 0:
-                        select_variant.append(variant['options'][i])
-                list_variant = [
-                inquirer.List(
-                    f'variant-{i}', message=variant_name, choices=select_variant)
-                ]
-
-                _prompt = inquirer.prompt(list_variant)
-                selected_variant = _prompt[f'variant-{i}']
-                sel_variation_list.append(selected_variant)
-        settings['variation'] = sel_variation_list
-        variation_str = f' {Fore.RED}| {Fore.WHITE}'.join(sel_variation_list)
-        print(f'{Fore.GREEN}Saving{Fore.WHITE}: {Fore.BLUE}{item_detail["name"]}\n{Fore.WHITE}{variation_str}')
+    is_valid = is_valid_url(answer)
+    if is_valid:
+        # settings['variation'] = sel_variation_list
+        # variation_str = f' {Fore.RED}| {Fore.WHITE}'.join(sel_variation_list)
+        print(f'{Fore.GREEN}Saving{Fore.WHITE}: {Fore.BLUE}{answer}')
         time.sleep(3)
         writeFileJson(settings, './config/index.json')
         menu()
@@ -307,8 +290,6 @@ def start_countdown():
         input(Fore.GREEN + '[ Back ]' + Style.RESET_ALL)
         menu()
     else:
-        clearConsole()
-        print(Fore.YELLOW + '[ Initial chrome automation... ]\n\n')
         executeScript(**settings)
 
 
