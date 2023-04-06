@@ -122,15 +122,7 @@ def executeScript(**params):
             if item_details: break;
 
     # Check is flashsale
-    if 'flash_sale' not in item_details and 'upcoming_flash_sale' not in item_details:
-        # Check stock
-        if item_details['stock'] == 0:
-            print(Fore.RED + '  [ Item is out of stock ]')
-            return
-        isbuy = input(Fore.YELLOW + '  This is not an item for flashsale, continue buy? [Y/n] ')
-        if isbuy.lower() != 'y': return
-        select_variation(driver, item_details)
-    elif item_details['flash_sale']:
+    if item_details['flash_sale']:
         if item_details['flash_sale']['stock'] == 0:
             print(Fore.RED + '  [ FlashSale item out of stock. ]')
             return
@@ -172,6 +164,14 @@ def executeScript(**params):
                 break
             else:
                 time.sleep(0.2)
+    else:
+        # Check stock
+        if item_details['stock'] == 0:
+            print(Fore.RED + '  [ Item is out of stock ]')
+            return
+        isbuy = input(Fore.YELLOW + '  This is not an item for flashsale, continue buy? [Y/n] ')
+        if isbuy.lower() != 'y': return
+        select_variation(driver, item_details)
 
     # Checkout & Order
     try:
