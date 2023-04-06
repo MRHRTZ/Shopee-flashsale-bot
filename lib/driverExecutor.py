@@ -17,30 +17,33 @@ from lib.moduleChecker import clearConsole
 
 def select_variation(driver, item_details):
     #select all available types on web 
-    variation = item_details['tier_variations']
-    variation_selections = []
-    if len(variation) > 0:
-        for variant in variation:
-            variant_name = variant['name']
-            select_variant = []
-            for i in range(len(variant['options'])):
-                if not variant['summed_stocks'] or variant['summed_stocks'][i] > 0:
-                    select_variant.append(variant['options'][i])
-            list_variant = [
-            inquirer.List(
-                f'variant-{i}', message=variant_name, choices=select_variant)
-            ]
+    try:
+        variation = item_details['tier_variations']
+        variation_selections = []
+        if len(variation) > 0:
+            for variant in variation:
+                variant_name = variant['name']
+                select_variant = []
+                for i in range(len(variant['options'])):
+                    if not variant['summed_stocks'] or variant['summed_stocks'][i] > 0:
+                        select_variant.append(variant['options'][i])
+                list_variant = [
+                inquirer.List(
+                    f'variant-{i}', message=variant_name, choices=select_variant)
+                ]
 
-            _prompt = inquirer.prompt(list_variant)
-            selected_variant = _prompt[f'variant-{i}']
-            variation_selections.append(selected_variant)
+                _prompt = inquirer.prompt(list_variant)
+                selected_variant = _prompt[f'variant-{i}']
+                variation_selections.append(selected_variant)
 
-        for variant in variation_selections:
-            variant_selector = f'button.product-variation[aria-label="{variant}"]'
-            wait_variant_btn = WebDriverWait(driver, 10)
-            variant_button = wait_variant_btn.until(EC.element_to_be_clickable((By.CSS_SELECTOR, variant_selector)))
-            variant_button.click()
-                
+            for variant in variation_selections:
+                variant_selector = f'button.product-variation[aria-label="{variant}"]'
+                wait_variant_btn = WebDriverWait(driver, 10)
+                variant_button = wait_variant_btn.until(EC.element_to_be_clickable((By.CSS_SELECTOR, variant_selector)))
+                variant_button.click()
+    except:
+        pass
+
 def executeScript(**params):
     clearConsole()
     print(Fore.YELLOW + '[ Initial chrome automation... ]\n\n')
@@ -84,7 +87,7 @@ def executeScript(**params):
     request = driver.wait_for_request('/api/v4/item/get', 60)
     item_details = decode_network(request)
     for key, value in item_details.items():
-        print(f'    {Fore.WHITE}{key}{Fore.RED}: {Fore.GREEN}:{value}')
+        print(f'    {Fore.WHITE}{key}{Fore.RED}: {Fore.GREEN}{value}')
 
     # Check item
     if not item_details or 'data' not in item_details:
