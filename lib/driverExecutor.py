@@ -41,7 +41,9 @@ def select_variation(driver, item_details):
                 variant_selector = f'button.product-variation[aria-label="{variant}"]'
                 wait_variant_btn = WebDriverWait(driver, 10)
                 variant_button = wait_variant_btn.until(EC.element_to_be_clickable((By.CSS_SELECTOR, variant_selector)))
-                variant_button.click()
+                variant_btn_class = variant_button.get_attribute('class')
+                if 'product-variation--selected' not in variant_btn_class:
+                    variant_button.click()
     except:
         pass
 
@@ -123,25 +125,26 @@ def executeScript(**params):
             if item_details: break;
 
     # Check is flashsale
+    item_name = item_details['name']
+    shop_loc = item_details['shop_location'] 
+    attributes = item_details['attributes']
+    desc_attr = ''
+    if attributes:
+        for attr in attributes:
+            attr_name = attr['name']
+            attr_value = str(datetime.fromtimestamp(int(attr['value']))) if attr['is_timestamp'] else attr['value']
+            desc_attr += f'{Fore.YELLOW}{attr_name}{Fore.WHITE}: {Fore.LIGHTRED_EX}{attr_value}'
+
     if item_details['flash_sale']:
         if item_details['flash_sale']['stock'] == 0:
             print(Fore.RED + '  [ FlashSale item out of stock. ]')
             return
         print(Fore.BLUE + '  [ FlashSale already started. ]')
+        print(f'  {Fore.GREEN}{item_name} {Fore.WHITE}[{Fore.YELLOW}{shop_loc}{Fore.WHITE}]')
         select_variation(driver, item_details)
     elif item_details['upcoming_flash_sale']:
-        item_name = item_details['name']
-        shop_loc = item_details['shop_location'] 
-        attributes = item_details['attributes']
-        desc_attr = ''
-        if attributes:
-            for attr in attributes:
-                attr_name = attr['name']
-                attr_value = str(datetime.fromtimestamp(int(attr['value']))) if attr['is_timestamp'] else attr['value']
-                desc_attr += f'{Fore.YELLOW}{attr_name}{Fore.WHITE}: {Fore.LIGHTRED_EX}{attr_value}'
         start_time = item_details['upcoming_flash_sale']['start_time']
         start_time = datetime.fromtimestamp(start_time)
-
         select_variation(driver, item_details)
 
         while True:
@@ -170,6 +173,7 @@ def executeScript(**params):
         if item_details['stock'] == 0:
             print(Fore.RED + '  [ Item is out of stock ]')
             return
+        print(f'  {Fore.GREEN}{item_name} {Fore.WHITE}[{Fore.YELLOW}{shop_loc}{Fore.WHITE}]')
         isbuy = input(Fore.YELLOW + '  This is not an item for flashsale, continue buy? [Y/n] ')
         if isbuy.lower() != 'y': return
         select_variation(driver, item_details)
@@ -209,7 +213,6 @@ def executeScript(**params):
         if checkout_data['error']:
             err_msg = checkout_data['error_message']
             print(Fore.LIGHTRED_EX + f'  [ {err_msg} ]')
-            return
         else:
             print(Fore.BLUE + '  [ Success CheckOut, Order by manual quickly! ]')
     except:
