@@ -18,6 +18,7 @@ from lib.moduleChecker import clearConsole
 def select_variation(driver, item_details):
     #select all available types on web 
     try:
+        print()
         variation = item_details['tier_variations']
         variation_selections = []
         if len(variation) > 0:
@@ -197,9 +198,9 @@ def executeScript(**params):
 
         # Wait for cart page
         driver.wait_for_request('/api/v4/cart/update')
-        driver.execute_script('''var minichat = document.querySelector("#shopee-mini-chat-embedded"); minichat.parentNode.removeChild(minichat);''') # Ngahalangan
         checkout_wait = WebDriverWait(driver, 1)
         checkout_button = checkout_wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, checkout)))
+        driver.execute_script('''var minichat = document.querySelector("#shopee-mini-chat-embedded"); minichat.parentNode.removeChild(minichat);''') # Ngahalangan
         checkout_button.click()
 
         # is checkout
