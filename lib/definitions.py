@@ -54,10 +54,11 @@ def headerOutput(autoCheckout, autoOrder, chromedriver, session, urlTarget, opti
 {Fore.GREEN}Platform        :{Style.RESET_ALL} {(Fore.BLUE + platform.system() + Style.RESET_ALL)}
 {Fore.GREEN}Session Name    :{Style.RESET_ALL} {(Fore.BLUE + session + Style.RESET_ALL) if session not in [None, ''] else (Fore.YELLOW + '[Select Session Account]' + Style.RESET_ALL)}
 {Fore.GREEN}Shopee Item Url :{Style.RESET_ALL} {(Fore.BLUE + urlTarget + Style.RESET_ALL) if urlTarget not in [None, ''] else (Fore.YELLOW + '[Insert Flashsale Shopee URL]' + Style.RESET_ALL)}
-{Fore.GREEN}Chromedriver    :{Style.RESET_ALL} {(Fore.BLUE + chromedriver + Style.RESET_ALL) if chromedriver not in [None, ''] else (Fore.YELLOW + '[Select Chromedriver]' + Style.RESET_ALL)}
 {Fore.GREEN}Auto Checkout   :{Style.RESET_ALL} {'✔️' if autoCheckout else '❌'}
 {Fore.GREEN}Auto Order      :{Style.RESET_ALL} {'✔️' if autoOrder else '❌'} {Fore.LIGHTRED_EX}[This Feature Will Added Soon]
 '''
+#{Fore.GREEN}Chromedriver    :{Style.RESET_ALL} {(Fore.BLUE + chromedriver + Style.RESET_ALL) if chromedriver not in [None, ''] else (Fore.YELLOW + '[Select Chromedriver]' + Style.RESET_ALL)}
+ 
         if len(options) != 0:
             string += f'{Fore.LIGHTBLACK_EX}# ===================== [ Options ] ==================== #\n'
             for i in range(len(options)):

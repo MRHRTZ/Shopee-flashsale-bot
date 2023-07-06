@@ -11,6 +11,6 @@ if __name__ == '__main__':
         checkModules(i)
     clearConsole()
     from lib.definitions import initProgram, checkChromeDriver, menu
-    checkChromeDriver()
+    # checkChromeDriver()
     initProgram()
     menu()

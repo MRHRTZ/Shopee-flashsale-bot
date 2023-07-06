@@ -3,7 +3,7 @@ import inquirer
 
 from datetime import datetime
 from colorama import Fore, Style
-from seleniumwire import webdriver
+from seleniumwire.undetected_chromedriver import v2 as webdriver
 from seleniumwire.utils import decode
 from progress.spinner import MoonSpinner
 from selenium.webdriver.common.by import By
@@ -76,7 +76,7 @@ def executeScript(**params):
     # chromeOpts.add_argument('--headless')
     chromeOpts.add_argument("--window-size=1280,720")
 
-    driver = webdriver.Chrome(driverPath, options=chromeOpts)
+    driver = webdriver.Chrome(options=chromeOpts)
     driver.get(url)
 
     with open(session_path, 'r') as f:
