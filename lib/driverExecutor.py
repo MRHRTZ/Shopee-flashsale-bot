@@ -50,7 +50,7 @@ def select_variation(driver, item_details):
 def pooling_item(driver, attempt):
     for request in driver.requests:
         if request.response:
-            if '/api/v4/pdp/hot_sales/get' in request.url:
+            if '/api/v4/pdp/get_pc' in request.url:
                 item_details = decode_network(request)
     if not item_details or 'data' not in item_details:
         print(Fore.YELLOW + f'  [ Check session failed ({attempt}), next check ... ]')
@@ -118,7 +118,7 @@ def executeScript(**params):
     if not item_details:
         print(Fore.CYAN + '  [ Item not found, This can happen because login error, checking session ... ]')
         driver.refresh()
-        request = driver.wait_for_request('/api/v4/pdp/hot_sales/get')
+        request = driver.wait_for_request('/api/v4/pdp/get_pc')
         item_details = decode_network(request)
         pool_attempt = 1
         while not item_details:
@@ -127,9 +127,9 @@ def executeScript(**params):
             if item_details: break;
 
     # Check is flashsale
-    item_name = item_details['name']
-    shop_loc = item_details['shop_location'] 
-    attributes = item_details['attributes']
+    item_name = item_details['item']['title']
+    shop_loc = item_details['item']['shop_location'] 
+    attributes = item_details['item']['attributes']
     desc_attr = ''
     if attributes:
         for attr in attributes:
@@ -138,14 +138,14 @@ def executeScript(**params):
             desc_attr += f'{Fore.YELLOW}{attr_name}{Fore.WHITE}: {Fore.LIGHTRED_EX}{attr_value}'
 
     if item_details['flash_sale']:
-        if item_details['flash_sale']['stock'] == 0:
+        if item_details['flash_sale']['sold'] == 0:
             print(Fore.RED + '  [ FlashSale item out of stock. ]')
             return
         print(Fore.BLUE + '  [ FlashSale already started. ]')
         print(f'  {Fore.GREEN}{item_name} {Fore.WHITE}[{Fore.YELLOW}{shop_loc}{Fore.WHITE}]')
         select_variation(driver, item_details)
-    elif item_details['upcoming_flash_sale']:
-        start_time = item_details['upcoming_flash_sale']['start_time']
+    elif item_details['flash_sale_preview']:
+        start_time = item_details['flash_sale_preview']['start_time']
         start_time = datetime.fromtimestamp(start_time)
         select_variation(driver, item_details)
 
