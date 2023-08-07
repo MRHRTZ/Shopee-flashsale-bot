@@ -3,7 +3,7 @@ import inquirer
 
 from datetime import datetime
 from colorama import Fore, Style
-from seleniumwire.undetected_chromedriver import v2 as webdriver
+from seleniumwire import webdriver
 from seleniumwire.utils import decode
 from progress.spinner import MoonSpinner
 from selenium.webdriver.common.by import By
@@ -50,7 +50,7 @@ def select_variation(driver, item_details):
 def pooling_item(driver, attempt):
     for request in driver.requests:
         if request.response:
-            if '/api/v4/item/get?' in request.url:
+            if '/api/v4/pdp/hot_sales/get' in request.url:
                 item_details = decode_network(request)
     if not item_details or 'data' not in item_details:
         print(Fore.YELLOW + f'  [ Check session failed ({attempt}), next check ... ]')
@@ -75,6 +75,8 @@ def executeScript(**params):
     chromeOpts = webdriver.ChromeOptions()
     # chromeOpts.add_argument('--headless')
     chromeOpts.add_argument("--window-size=1280,720")
+    chromeOpts.add_argument("--disable-proxy-certificate-handler")
+    chromeOpts.add_argument("--disable-content-security-policy")
 
     driver = webdriver.Chrome(options=chromeOpts)
     driver.get(url)
@@ -116,7 +118,7 @@ def executeScript(**params):
     if not item_details:
         print(Fore.CYAN + '  [ Item not found, This can happen because login error, checking session ... ]')
         driver.refresh()
-        request = driver.wait_for_request('/api/v4/item/get')
+        request = driver.wait_for_request('/api/v4/pdp/hot_sales/get')
         item_details = decode_network(request)
         pool_attempt = 1
         while not item_details:
