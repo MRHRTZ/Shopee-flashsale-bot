@@ -1,5 +1,7 @@
 # Shopee-flashsale-bot
 
+> This repository has been archived because it is not workable due to captcha, api changes, fingerprint encryption etc., if anyone is interested in maintaining it, please contact us.
+
 <p align="center">
 <img src="./media/screenshot/preview.png"/>
 </p>
