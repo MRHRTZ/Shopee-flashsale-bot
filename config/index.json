@@ -1,6 +1,6 @@
 {
-    "session": "hz.json",
-    "url": "https://shopee.co.id/sweater-crewneck-pria-GOOD-termurah-bahan-fleece-lembut-dan-tebal-i.352406654.14000043934?is_from_login=true",
+    "session": "",
+    "url": "",
     "variation": [],
     "chromedriver": "./webdriver/chromedriver",
     "options": [],
@@ -16,5 +16,5 @@
         "requests",
         "wget"
     ],
-    "platform": "Windows"
+    "platform": ""
 }
