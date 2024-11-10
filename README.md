@@ -1,6 +1,6 @@
 # Shopee-flashsale-bot
 
-> This project has been archived due to unstable captcha, API changes, fingerprint encryption, etc. If anyone is interested in updates or maintenance, please open a pull request.
+> This project may not run properly due to detection by shopee antibot. If anyone is interested in further research and updates, please open a pull request.
 
 <p align="center">
 <img src="./media/screenshot/preview.png"/>
