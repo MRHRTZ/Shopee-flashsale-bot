@@ -1,12 +1,11 @@
 # Shopee-flashsale-bot
 
-> This repository has been archived because it is not workable due to captcha, api changes, fingerprint encryption etc., if anyone is interested in maintaining it, please contact us.
+> This project has been archived due to unstable captcha, API changes, fingerprint encryption, etc. If anyone is interested in updates or maintenance, please open a pull request.
 
 <p align="center">
 <img src="./media/screenshot/preview.png"/>
 </p>
 <p align="center">
-<!-- <h1>ANCHT BOT</h1> -->
 </p>
 <p align="center">
 <a href="https://github.com/MRHRTZ"><img title="Author" src="https://img.shields.io/badge/Author-MRHRTZ-red.svg?style=for-the-badge&logo=github"></a>

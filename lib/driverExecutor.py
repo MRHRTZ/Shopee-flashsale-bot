@@ -75,14 +75,18 @@ def executeScript(**params):
     chromeOpts = webdriver.ChromeOptions()
     # chromeOpts.add_argument('--headless')
     chromeOpts.add_argument("--window-size=1280,720")
-    chromeOpts.add_argument("--disable-proxy-certificate-handler")
-    chromeOpts.add_argument("--disable-content-security-policy")
+    # chromeOpts.add_argument("--disable-proxy-certificate-handler")
+    # chromeOpts.add_argument("--disable-content-security-policy")
 
     driver = webdriver.Chrome(options=chromeOpts)
     driver.get(url)
 
-    with open(session_path, 'r') as f:
-        session = json.load(f)
+    try:
+        with open(session_path, 'r') as f:
+            session = json.load(f)
+    except Exception as e:
+        print(Fore.LIGHTRED_EX + f'  [ Failed to load session: {e} ]')
+        return
 
     for cookie in session:
         if 'sameSite' in cookie:
