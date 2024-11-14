@@ -63,5 +63,4 @@
 - If you can't switch menu on windows 10 try to use numpad arrow (with numlock off) - <a href="https://github.com/magmax/python-inquirer/issues/117#issuecomment-1020013883" target="_blank">Reference</a>
 
 ## Contact Me
-- <a href="https://wa.me/6285559038021?text=Hi" target="_blank">WhatsApp</a>
 - <a href="https://www.instagram.com/hanif_az.sq.61" target="_blank">Instagram</a>
